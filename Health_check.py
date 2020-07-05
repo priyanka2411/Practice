@@ -8,7 +8,7 @@ def check_disk_usage(disk):
     free = du.free / du.total * 100
     return free > 20
 
-def check_cpu_usage():
+def check_cpu_usage()::quit()
     usage = psutil.cpu_percent(1)
     return usage < 75sx
 
